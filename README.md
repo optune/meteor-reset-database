@@ -16,7 +16,7 @@ resetDatabase only resets your database when it is executed inside a debugOnly e
 You can clear your database with `resetDatabase(options, callback)`. It works on both the client and the server.
 
 ```javascript
-import { resetDatabase } from 'meteor/xolvio:cleaner';
+import { resetDatabase } from 'meteor/optune:reset-database';
 
 // delete all collections with optional callback
 resetDatabase(null, callback);
