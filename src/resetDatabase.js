@@ -31,8 +31,8 @@ if (Meteor.isServer) {
     });
 
     appCollections.forEach(function (appCollection) {
-      const remove = Meteor.wrapAsync(appCollection.remove, appCollection);
-      remove({}, {});
+      const remove = Meteor.wrapAsync(appCollection.deleteMany, appCollection);
+      remove({});
     });
   };
 
